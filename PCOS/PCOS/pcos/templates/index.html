@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position:absolute;
+      text-align: center;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif; 
+      background-color: pink;
+    }
+    
+  </style>
+</head>
+
+
+<body class="center">
+    <h1 style="color:black (44, 48, 90); font-weight: 700;">
+      <i> POLYCYSTIC OVARY SYNDROME DISEASE PREDICTION</i>
+    </h1>
+  <form action="result">
+    {% csrf_token %}
+    <div class="form-group">
+      <input class="form-control" placeholder='Age (yrs)' required type="text" name='Age (yrs)'>
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Weight (Kg)' required type="text" name= 'Weight (Kg)'>
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Blood Group' required type="text" name= 'Blood Group'>
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Hb(g/dl)' required type="text" name= 'Hb(g/dl)'>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Marraige Status (Yrs)' required type="text" name= 'Marraige Status (Yrs)'>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Pregnant(Y/N)' required type="text" name= 'Pregnant(Y/N)'>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder='RR (breaths/min)' required type="text" name= 'RR (breaths/min)'>
+    </div>
+ 
+    <div class="form-group">
+      <input class="form-control" placeholder='RBS(mg/dl)' required type="text" name= 'RBS(mg/dl)'>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Weight gain(Y/N)' required type="text" name= 'Weight gain(Y/N)'>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder='Skin darkening (Y/N)' required type="text" name= 'Skin darkening (Y/N)'>
+    </div>
+    <div class="form-group">
+      <input class="form-control" placeholder='Hair loss(Y/N)' required type="text" name= 'Hair loss(Y/N)'>
+    </div>
+    <div class="form-group">
+      <input class="form-control" placeholder='Pimples(Y/N)' required type="text" name= 'Pimples(Y/N)'>
+    </div>
+    <div class="form-group">
+      <input class="form-control" placeholder='Endometrium (mm)' required type="text" name= 'Endometrium (mm)'>
+    </div>
+    
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</div>
+</body>
+
+</html>
